@@ -18,7 +18,7 @@ struct LaunchView: View {
             Color.pink
                 .ignoresSafeArea()
             
-            Text("iOSTemplateApp")
+            Text("Poke-Tinder")
                 .font(.title)
                 .fontWeight(.semibold)
         }

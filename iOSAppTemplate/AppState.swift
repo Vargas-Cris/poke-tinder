@@ -16,9 +16,8 @@ class AppState: ObservableObject {
     enum AppScreens: String {
         //lista las vistas
         case launch
-        case home
-        case profile
-        case options
+        case main
+        case singIn
     }
     
     @Published var currentScreen: AppScreens = .launch

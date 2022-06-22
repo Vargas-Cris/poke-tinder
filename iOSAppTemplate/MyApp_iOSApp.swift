@@ -10,8 +10,9 @@ import SwiftUI
 @main
 //si ahy un identificador tipo main sera la vista principla de todos
 struct MyApp_iOS: App {
-    //manejioador de tipo main
     
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    //manejioador de tipo main
     @StateObject var appState: AppState = AppState.shared
     //instanciando
     var body: some Scene {
@@ -21,14 +22,15 @@ struct MyApp_iOS: App {
             case .launch:
                 //si el app esta en lauch muestra el launcview de igual en todos
                 LaunchView()
+                //variable que se propaga d a todas las vistas, hace que la vista tega la opcionn que cree ua opcio de tipo eviroment,
                     .environmentObject(appState)
-            case .home:
-                ContentView()
+            case .main:
+                MainView()
                     .environmentObject(appState)
-            case .options:
-                ContentView()
-            case .profile:
-                ContentView()
+            case .singIn:
+                SignInView()
+                    .environmentObject(appState)
+           
             }
         }
     }

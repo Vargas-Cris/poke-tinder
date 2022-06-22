@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import FirebaseAuth
 
 class LaunchViewModel :ObservableObject{
     //heredara una clase de observable object
@@ -17,7 +18,7 @@ class LaunchViewModel :ObservableObject{
     //para que pase esto se instancia el launViewmodel se instancia en la vista  launchView
     init(){
         //indica que el appstate es home
-        appState.currentScreen =  .home
+        appState.currentScreen = Auth.auth().currentUser != nil ? .main : .singIn
         
     }
 }
