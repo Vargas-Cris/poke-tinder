@@ -13,13 +13,14 @@ struct SingUpView: View {
     @State private var name: String = ""
     @State private var email: String = ""
     @State private var password: String = ""
+    @State var alertError = false
     
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
                 Text("Sign Up")
                     .font(.system(size: 25, weight: .black))
-                Text("Welcome to Poke Tinder match with your favorite pokemon")
+                Text("Welcome to Poke Tinder find and match with your favorite pokemon <3")
             }
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding()
@@ -51,10 +52,20 @@ struct SingUpView: View {
                 .background(.pink)
                 .cornerRadius(8)
             }.padding()
+            .alert(isPresented: $alertError) {
+                Alert(
+                     title: Text("Error"),
+                     message: Text(authViewModel.errorMessage),
+                      dismissButton: .default(Text("Ok"))
+                                )
+                            }
+            .onReceive(authViewModel.$showError, perform: { newValue in
+                  print("newValue \(newValue)")
+                     alertError = newValue
+                        })
+                    }
+                }
         }
-    }
-}
-
 struct SingUpView_Previews: PreviewProvider {
     static var previews: some View {
         SingUpView()
