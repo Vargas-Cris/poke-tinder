@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>273512083157-rn9ohegb4l1umsn2s8ttkpffslao9qc4.apps.googleusercontent.com</string>
+	<string>133405745629-o9bduuk58kq5tl8an4cll283kkpe4a50.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.273512083157-rn9ohegb4l1umsn2s8ttkpffslao9qc4</string>
+	<string>com.googleusercontent.apps.133405745629-o9bduuk58kq5tl8an4cll283kkpe4a50</string>
 	<key>API_KEY</key>
-	<string>AIzaSyDzxEQ0bymhPtJwTHeAOqdfesc4d_Qknw4</string>
+	<string>AIzaSyAKZCSWxfZ7AV9hO1_ZRa9y9htX_FzL2bQ</string>
 	<key>GCM_SENDER_ID</key>
-	<string>273512083157</string>
+	<string>133405745629</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.cuellarrouss.Spotif-clone-B</string>
+	<string>com.tecsup.iOSAppTemplate</string>
 	<key>PROJECT_ID</key>
-	<string>spotify-5c4df</string>
+	<string>poketinder-56e2b</string>
 	<key>STORAGE_BUCKET</key>
-	<string>spotify-5c4df.appspot.com</string>
+	<string>poketinder-56e2b.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:273512083157:ios:174e390aa188be172e3c5c</string>
+	<string>1:133405745629:ios:e2a429882d4600cae81634</string>
 </dict>
 </plist>
